@@ -1,0 +1,57 @@
+# dependencies
+node_modules/
+frontend/node_modules/
+
+# environment files
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+!.env.example
+!frontend/.env.example
+
+# framework and build output
+.next/
+frontend/.next/
+out/
+frontend/out/
+dist/
+build/
+.cache/
+
+# hardhat output
+artifacts/
+cache/
+coverage/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local Supabase exports/dumps that may contain real data
+supabase/.branches/
+supabase/.temp/
+supabase/.tmp/
+supabase/dumps/
+supabase/backups/
+supabase/*.dump
+supabase/*.sql.gz
+supabase/*production*.sql
+supabase/*prod*.sql
+
+# private key material
+*.pem
+*.key
+*.p8
+*.p12
+*.keystore
+*.secret
+
+# platform/editor files
+.DS_Store
+.vercel
