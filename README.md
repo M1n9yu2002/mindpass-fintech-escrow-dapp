@@ -18,6 +18,12 @@ MindPass explores a hybrid settlement model for appointment-based services:
 
 The public portfolio focus is the FinTech escrow and settlement architecture, not clinical service delivery.
 
+## Booking-to-Settlement Workflow
+
+![MindPass booking-to-settlement workflow](docs/assets/user-journey-booking-to-settlement.jpg)
+
+The diagram summarises the MVP journey from wallet login and booking request to funding, check-in/no-show handling, mutual confirmation, settlement, and withdrawal.
+
 ## Problem and FinTech Motivation
 
 Appointment-based digital services often need more than a simple payment button. They need stateful settlement rules:
