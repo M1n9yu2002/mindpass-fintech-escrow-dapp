@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-syne: Arial, Helvetica, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -69,7 +73,7 @@ body::after {
 .font-hero-syne {
   font-family: var(--font-syne), sans-serif;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   line-height: 1;
 }
 

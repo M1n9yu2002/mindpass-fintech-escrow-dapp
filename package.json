@@ -1,13 +1,13 @@
 {
   "name": "mindpass-ftgp-group19",
   "version": "1.0.0",
-  "description": "FTGP group project repository for MindPass MVP.",
+  "description": "Public portfolio prototype for MindPass programmable escrow and subsidy-aware settlement.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test"
   },
   "repository": {
     "type": "git",
@@ -22,16 +22,14 @@
   },
   "homepage": "https://github.com/Min9yu2002/mindpass-ftgp-group19#readme",
   "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.2",
     "@nomicfoundation/hardhat-ethers": "^3.1.3",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.2",
     "dotenv": "^17.3.1",
     "ethers": "^6.16.0",
     "hardhat": "^2.28.6"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.6.1",
-    "@rainbow-me/rainbowkit": "^2.2.10",
-    "@tanstack/react-query": "^5.90.21",
-    "viem": "^2.47.4",
-    "wagmi": "^3.5.0"
+    "@openzeppelin/contracts": "^5.6.1"
   }
 }

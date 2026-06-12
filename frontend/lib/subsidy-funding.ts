@@ -1,4 +1,4 @@
-import { MINDPASS_ESCROW_STATUS } from "./mindpassEscrow";
+import { MINDPASS_ESCROW_STATUS } from "./mindpassEscrow.ts";
 
 export type SubsidyFundingChainOutcome =
   | "no_subsidy_needed"

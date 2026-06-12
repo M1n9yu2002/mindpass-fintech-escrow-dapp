@@ -1,5 +1,6 @@
 require("dotenv").config();
 require("@nomicfoundation/hardhat-ethers");
+require("@nomicfoundation/hardhat-chai-matchers");
 
 const alchemySepoliaUrl = process.env.ALCHEMY_SEPOLIA_URL || "";
 const privateKey = process.env.PRIVATE_KEY || "";

@@ -15,9 +15,12 @@ type ProvidersProps = {
   children: ReactNode;
 };
 
+const walletConnectProjectId =
+  process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID?.trim() || "YOUR_PROJECT_ID";
+
 const config = getDefaultConfig({
   appName: "MindPass",
-  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID ?? "",
+  projectId: walletConnectProjectId,
   chains: [sepolia],
   ssr: false,
 });

@@ -126,6 +126,6 @@ describe("MindPassEscrow", function () {
   it("no longer exposes the funded unstarted manual cancellation entrypoint", async function () {
     const { escrow } = await loadFixture(deployEscrowFixture);
 
-    expect(() => escrow.interface.getFunction("cancelUnstartedSession")).to.throw();
+    expect(escrow.interface.getFunction("cancelUnstartedSession")).to.equal(null);
   });
 });

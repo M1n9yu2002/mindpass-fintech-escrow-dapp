@@ -2,17 +2,17 @@ import {
   buildPatientNoShowPatch,
   buildPaymentTimeoutPatch,
   buildTherapistNoShowPatch,
-} from "./onchain-session-mapping";
+} from "./onchain-session-mapping.ts";
 import {
   MINDPASS_ESCROW_CHAIN_ID,
   MINDPASS_ESCROW_STATUS,
   type HexAddress,
   type MindPassEscrowSessionStruct,
-} from "./mindpassEscrow";
+} from "./mindpassEscrow.ts";
 import {
   shouldCatchFundedNoShow,
   shouldCatchPaymentTimeout,
-} from "./session-transition-guards";
+} from "./session-transition-guards.ts";
 
 type SessionDeadlineShape = {
   status: string;

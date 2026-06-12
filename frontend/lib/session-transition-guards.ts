@@ -1,13 +1,13 @@
 import {
   resolveNoShowSettlement,
   type NoShowSettlementResult,
-} from "./booking";
-import { hasTimestampExpired } from "./session-formatting";
+} from "./booking.ts";
+import { hasTimestampExpired } from "./session-formatting.ts";
 import {
   isAcceptedAwaitingPaymentStatus,
   isFundedOrLiveSessionStatus,
   isFundedSessionStatus,
-} from "./session-status";
+} from "./session-status.ts";
 
 type SessionTimingShape = {
   status: string;

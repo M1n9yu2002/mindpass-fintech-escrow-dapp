@@ -1,6 +1,6 @@
 import type { Hex } from "viem";
 import { decodeEventLog } from "viem";
-import { MINDPASS_ESCROW_ABI } from "./mindpassEscrow";
+import { MINDPASS_ESCROW_ABI } from "./mindpassEscrow.ts";
 
 type EscrowReceiptLog = {
   data: Hex;

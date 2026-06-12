@@ -165,7 +165,7 @@ Prerequisites:
 - Node.js 20+
 - npm
 - a Supabase project for local testing
-- a WalletConnect project id
+- a WalletConnect project id only if testing QR/mobile wallet connections
 - Sepolia RPC access if testing Web3 flows
 
 Install root contract dependencies:
@@ -181,7 +181,9 @@ cd frontend
 npm install
 ```
 
-Create local environment files from `.env.example` and fill in local/demo values only.
+Create local environment files from `.env.example` and fill in local/demo values only. Do not commit `.env`, `.env.local`, private keys, service role keys, or real WalletConnect project IDs.
+
+For portfolio builds, `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID` can remain unset or use the `YOUR_PROJECT_ID` placeholder from `.env.example`. Replace it with your own WalletConnect Cloud project ID when testing real QR/mobile wallet connections.
 
 Run the frontend:
 
@@ -204,5 +206,3 @@ Run contract tests:
 ```bash
 npx hardhat test
 ```
-
-Note: the root Hardhat test setup still needs dependency/script cleanup before this is guaranteed to work from a fresh clone.

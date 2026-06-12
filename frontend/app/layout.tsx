@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
 import GlobalNavbar from "../components/GlobalNavbar";
@@ -27,15 +26,9 @@ const themeInitScript = `
   })();
 `;
 
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-syne",
-});
-
 export const metadata: Metadata = {
   title: "MindPass",
-  description: "Privacy-first counseling support platform MVP demo.",
+  description: "Hybrid FinTech DApp prototype for programmable escrow and verifiable settlement.",
   icons: {
     icon: "/vercel.svg",
     shortcut: "/vercel.svg",
@@ -52,7 +45,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
-      <body className={`${syne.variable} text-foreground antialiased`}>
+      <body className="text-foreground antialiased">
         <Providers>
           <GlobalNavbar />
           <div className="relative min-h-screen">{children}</div>

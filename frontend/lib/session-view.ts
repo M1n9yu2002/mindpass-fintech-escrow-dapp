@@ -1,12 +1,12 @@
 import {
   buildBookingFeedback,
   type BookingFeedbackView,
-} from "./session-outcome";
+} from "./session-outcome.ts";
 import {
   isFundedOrLiveSessionStatus,
   type ProviderQueueSessionStatus,
   type SessionWorkflowStatus,
-} from "./session-status";
+} from "./session-status.ts";
 
 export type ProviderQueueActionModel = {
   showDecisionButtons: boolean;
